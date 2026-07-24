@@ -28,9 +28,9 @@ Each road segment was profiled by the statistical distribution of time gaps betw
 freq_daily <- daily_filtered %>%
   group_by(segment_id) %>%
   summarise(
-    freq_d_mean = mean(Diff, na.rm = TRUE),
-    freq_d_med  = median(Diff, na.rm = TRUE),
-    freq_d_sd   = sd(Diff, na.rm = TRUE)
+    freq_daily_mean = mean(Diff, na.rm = TRUE),
+    freq_daily_median  = median(Diff, na.rm = TRUE),
+    freq_daily_sd   = sd(Diff, na.rm = TRUE)
   )
 ```
 
